@@ -10,7 +10,7 @@ class Class(models.Model):
     enrolled_students = models.ManyToManyField(User, related_name='enrolled_classes', blank=True)
     class_status = models.CharField(
         max_length=10,
-        choices=[('open', 'Open'), ('close', 'Close'), ('full', 'Open but full')],
+        choices=[('open', 'Open'), ('close', 'Close')],
         default='open'
     )
 
