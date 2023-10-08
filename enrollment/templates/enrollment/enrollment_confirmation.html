@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrollment Confirmation</title>
+</head>
+<body>
+    <h1>Enrollment Successful</h1>
+    <p>You have successfully enrolled in the following class:</p>
+    <strong>{{ enrolled_class.class_name }}</strong>
+    <br>
+    Class Code: {{ enrolled_class.class_code }}
+    <br>
+    Semester: {{ enrolled_class.class_semester }}
+    <br>
+    Year: {{ enrolled_class.class_year }}
+    <br>
+    <a href="{% url 'class_list' %}">Back to Class List</a
+    {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+    {% endif %}
+</body>
+</html>
