@@ -1,4 +1,4 @@
-# Class Enrollment Web Application
+# Class Enrollment Web Application Deploy branch
 
 This is a web application built with Django for managing class enrollment. It allows students to view and enroll in open classes, as well as view their enrolled classes. Admin users can manage classes and monitor student enrollments.
 
@@ -8,7 +8,7 @@ This is a web application built with Django for managing class enrollment. It al
 - [Installation](#installation)
 - [Usage](#usage)
 - [Name](#name)
-- [Video](#vidoe)
+- [Link](#link)
 
 ## Features
 
@@ -68,6 +68,6 @@ This is a web application built with Django for managing class enrollment. It al
 ธนบูรณ์ จิวริยเวชช์ 6410615055
 นวภูมิ นาชัย 6410615071
 
-#Video
-
-https://youtu.be/I9uD2jpEytA
+#Link
+http://tse6410615055.pythonanywhere.com
+https://youtu.be/fHIX9Zze6BA
