@@ -47,6 +47,7 @@ def unenroll_class(request, class_code):
         selected_class = Class.objects.get(class_code=class_code)
         enrollment = Enrollment.objects.get(student=request.user, enrolled_class=selected_class)
         enrollment.delete()
+        messages.success(request, 'You have successfully unenrolled from this class.')
         return redirect('enrolled_classes')
     except Enrollment.DoesNotExist:
         raise Http404("You are not enrolled in this class.")

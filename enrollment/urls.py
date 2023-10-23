@@ -4,7 +4,7 @@ from django.contrib.auth import views as auth_views
 from django.views.generic import RedirectView
 
 urlpatterns = [
-    path('', RedirectView.as_view(url='classes/'), name='class_list'),
+    path('', RedirectView.as_view(url='classes/')),
     path('classes/', views.class_list, name='class_list'),
     path('enroll/<str:class_code>/', views.enroll_class, name='enroll_class'),
     path('enrolled-classes/', views.enrolled_classes, name='enrolled_classes'),
